@@ -1,4 +1,6 @@
-export interface IUsario {
+import { RowDataPacket } from "mysql2";
+
+export interface IUsario extends RowDataPacket{
     id?: number;
     nombre: string;
     email: string;
